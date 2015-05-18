@@ -1,6 +1,6 @@
 require File.expand_path('../app', __FILE__)
 
-if token = ENV["ROLLBAR"]
+if token = ENV['ROLLBAR_ACCESS_TOKEN']
   require 'rollbar'
   Rollbar.configure do |config|
     config.disable_monkey_patch = true
